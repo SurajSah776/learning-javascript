@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML DOM</title>
+        <style>
+            table{
+                border-radius: 15px;
+            }
+            th{
+                border-radius: 10px;
+                background-color: aqua;
+            }
+            td, th{
+                border-radius: 7px;
+                padding: 10px 15px;
+            }
+            h2, h3, h4, h5, p{
+                margin-top: 2.5px;
+                border: 3px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Starting with the HTML DOM -->
+        <script src="./scriptDOM2.js"></script>
+        <h2 class="h2">
+            HTML DOM
+            <p class="para" id="prg">This is a Paragraph</p>
+        </h2>
+        <!-- innerHTML / outerHTML example -->
+        <div class="inner-outer">
+            <p class="outer">
+                I am outer para
+                <p class="inner" data-namee="Suraj Niraj">I am inner para</p>
+            </p>
+        </div>
+        <!--  -->
+        <!--<table
+            class="para"
+            id="para1"
+            border="2"
+            style="padding:5px;margin:auto"
+        >
+            <tr>
+                <th class="firstTH">Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+            </tr>
+        </table>-->
+        <button class="btn" style="display:block; padding:10px 20px; margin:20px auto; background-color:black; border-radius:25px; color:white; font-weight:bolder; cursor:pointer;">Manipulate Table</button>
+        <br>
+        <button class="btn" id="btn1" style="display:block; padding:8px 35px; margin:2px auto; background-color:rgb(56, 5, 5); border-radius:25px; color:white; font-weight:bolder; cursor:pointer;">Click Me</button>
+        <br>
+        <button class="btn" id="btn2" style="display:block; padding:8px 35px; margin:2px auto; background-color:rgb(10, 58, 121); border-radius:25px; color:white; font-weight:bolder; cursor:pointer;">Click Me</button>
+        <br>
+        <h3 name="heads3" class="heading3">Heading - 3 &nbsp; Hey there, we are Walking the HTML DOM</h3>
+        <h4 name="heads4" class="heading4">Heading - 4 &nbsp; Hey there, we are Walking the HTML DOM</h4>
+        <h5 name="heads5" class="heading5">Heading - 5 &nbsp; Hey there, we are Walking the HTML DOM</h5>
+        <!-- JS Script -->
+        <!-- <script src="/scriptDOM.js"></script> -->
+        <!-- <script src="./scriptDOM2.js"></script> -->
+    </body>
+</html>
