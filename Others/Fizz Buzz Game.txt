@@ -1,0 +1,28 @@
+-------------------Fizz Buzz Game --------------------
+
+// # Program - 8
+// Fizz(3) Buzz(5) FizzBuzz(3 & 5) Problem
+var arr = []
+count = 1
+
+function fizzBuzz(){
+  if(count%3===0 && count%5===0){
+    arr.push("FizzBuzz");
+  }
+  else if(count%3===0){
+    arr.push("Fizz");
+  }
+  else if(count%5===0){
+    arr.push("Buzz");
+  }
+  else{
+    arr.push(count)
+  }
+  count++;
+}
+
+for (let i=0; i<=100; i++){
+  fizzBuzz();
+}
+
+console.log(arr);

@@ -1,0 +1,210 @@
+Website :stanford.edu/~cpiech/karel/ide.html
+/**
+ * Welcome to the Stanford Karel IDE.
+ * This is a free space for you to 
+ * write any Karel program you want.
+ **/
+function main(){
+/*Putting the Beeper*/
+   PutBeeper();
+   move();
+   turnRight();
+   move();
+   moveTwice();
+   
+/*Going to Starting Position*/
+   turnRight();
+   moveFour();
+   turnRight();
+   moveFour();
+   turnRight();
+   turnRight();
+      
+/*Picking the Beeper*/
+   PickBeeper();
+   move();
+   turnRight();
+   move();
+   moveTwice();
+   /*Going to Starting Position*/
+   turnRight();
+   moveFour();
+   turnRight();
+   moveFour();
+   turnRight();
+   turnRight();
+
+}
+
+function PutBeeper(){
+   putBeeper();
+   moveDiagonallyMain();
+   turnLeft();
+   moveTwice();
+   putBeeper();
+   moveTwice();
+   putBeeper();
+   turnLeft();
+   moveTwice();
+   putBeeper();
+   moveTwice();
+   turnLeft();
+   moveTwice();
+   putBeeper();
+   moveTwice();
+   putBeeper();
+   turnLeft();
+   moveTwice();
+   putBeeper();
+   turnLeft();
+   move();
+   turnLeft();
+   move();
+   putBeeper();
+   turnRight();
+   moveTwice();
+   turnRight();
+   moveTwice();
+   putBeeper();
+}
+
+
+function moveTwice(){
+   move();
+   move();
+}
+
+function moveFour(){
+   move();
+   move();
+   move();
+   move();
+}
+
+function moveDiagonallyMain(){
+   move();
+   turnLeft();
+   move();
+   putBeeper();
+   turnRight();
+   move();
+   turnLeft();
+   move();
+   putBeeper();
+   turnRight();
+   move();
+   turnLeft();
+   move();
+   putBeeper();
+   turnRight();
+   move();
+   turnLeft();
+   move();
+   putBeeper();
+}
+
+/*Pick Beeper Diagonally Move*/
+function moveDiagonallyPick(){
+   move();
+   turnLeft();
+   move();
+   pickBeeper();
+   turnRight();
+   move();
+   turnLeft();
+   move();
+   pickBeeper();
+   turnRight();
+   move();
+   turnLeft();
+   move();
+   pickBeeper();
+   turnRight();
+   move();
+   turnLeft();
+   move();
+   pickBeeper();
+}
+
+function PickBeeper(){
+   pickBeeper();
+   moveDiagonallyPick();
+   turnLeft();
+   moveTwice();
+   pickBeeper();
+   moveTwice();
+   pickBeeper();
+   turnLeft();
+   moveTwice();
+   pickBeeper();
+   moveTwice();
+   turnLeft();
+   moveTwice();
+   pickBeeper();
+   moveTwice();
+   pickBeeper();
+   turnLeft();
+   moveTwice();
+   pickBeeper();
+   turnLeft();
+   move();
+   turnLeft();
+   move();
+   pickBeeper();
+   turnRight();
+   moveTwice();
+   turnRight();
+   moveTwice();
+   pickBeeper();
+}
+
+
+
+
+-------------------------------------------------------
+
+Original Solution
+
+
+function main(){
+   beepersRight();
+   goUpTurnLeft();
+   beepersLeft();
+   goUpTurnRight();
+      beepersRight();
+   goUpTurnLeft();
+   beepersLeft();
+   goUpTurnRight();
+      beepersRight();
+}
+ 
+function goUpTurnRight() {
+   turnRight();
+   move();
+   turnRight();
+}
+ 
+function goUpTurnLeft() {
+   turnLeft();
+   move();
+   turnLeft();
+}
+ 
+function beepersRight() {
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();  
+}
+ 
+function beepersLeft() {
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+}

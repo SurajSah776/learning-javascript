@@ -1,0 +1,16 @@
+/*Remaining Age Calculation in days, year and months*/
+
+
+function lifeInWeeks(age) {
+    
+/* ***********Don't change the code above*********** */
+  remAge = 90 - age;
+  var weeks = remAge * 52;
+  var months = remAge * 12;
+  var days = remAge * 365
+
+  console.log("You have "+days+" days, "+weeks+" weeks, and "+months+" months left.")
+/* ************Don't change the code below********* */
+}
+
+lifeInWeeks(56);
