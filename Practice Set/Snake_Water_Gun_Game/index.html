@@ -1,0 +1,86 @@
+<!-- Snake Water Gun   Game Using HTML, CSS and JavaScript-->
+<!-- The game should ask you to enter S, W or G. iThe computer should be able to randomly
+generate S, W or G and declare win or loss using alert. Use alert, prompt and confirm whereever required! -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snake Water Gun</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            body{
+                position: relative;
+            }
+            h2{
+                border: 2px solid black;
+                margin: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 15px 10px;
+                background-color: aquamarine;
+                box-shadow: 2px 2px 15px rgb(5, 10, 9);
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 80vw;
+                height: 60vh;
+                margin: auto auto;
+                background: linear-gradient(rgba(255, 0, 0, 0.578), rgba(0, 0, 0, 0.578), rgba(64, 47, 64, 0.546), rgba(0, 128, 0, 0.557), rgba(29, 155, 155, 0.516));
+
+                /*font-weight: lighter;*/
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+            }
+            .user{
+                border: 2px solid rebeccapurple;
+                padding:20px 50px;
+                margin-bottom: 2px;
+            }
+            .computer{
+                border: 2px solid rebeccapurple;
+                padding:20px 50px;
+            }
+            input{
+                width: 50px;
+                border: 2px solid black;
+                padding: 8px 5px;
+            }
+            .result{
+                border: 2px solid blue;
+                margin: 10px;
+                padding: 10px 94px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Snake - Water - Gun</h2>
+        <div class="container">
+            <div class="content">
+                <div class="user">
+                    Your Choice :
+                    <input type="text" placeholder="S">
+                </div>
+                <div class="computer">
+                    Computer :
+                    <input type="text" placeholder="S">
+                </div>
+            </div>
+            <div class="result">
+                Winner is :
+                <span id="winner"></span>
+            </div>
+        </div>
+    </body>
+</html>
